@@ -1,0 +1,32 @@
+/*SOBRE MI */
+
+.about{
+    // padding-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+    h2{
+        font-size: 2rem;
+    }
+    .conocimientos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 13px;
+        .sobre-mi-texto{
+            border: 2px solid #3ae467;
+            padding: 10px;
+            border-radius: 10px ;
+
+        }
+        .conocimientos-img h3{
+            font-size: 15px;
+            padding: 10px;
+        }
+    }    
+}

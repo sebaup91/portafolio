@@ -1,0 +1,65 @@
+/* CONTACTO */
+
+.review{
+    font-weight: 500;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 30px;
+    h2{
+        text-align: center;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+    .review-container{
+        font-size: 1.5rem;
+        p{
+            font-size: 1.5rem;
+            padding-top: 40px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .icon{
+                color: #3ae467;
+                font-size: 2rem;
+                padding-right: 10px;
+            }
+            a{
+                text-decoration: none;
+                color: #fff;
+                text-decoration: 2px underline #3ae467;
+                cursor: pointer;
+                font-size: 1.4rem;
+                padding-left: 10px;
+            }
+        }
+    }
+    .review-herramientas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+        font-size: 1.4rem;
+        p{
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        .review-herramientas-img{
+            display: grid;
+            place-items: center;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+    }
+}
+
+.boton-inicio{
+    border: none;
+    outline: none;
+    background-color: #3ae467;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-top: 30px;
+}

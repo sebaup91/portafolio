@@ -1,0 +1,269 @@
+/* ----- TABLET ----- */
+
+/* INICIO */
+
+@media (min-width:767px) {
+    header{
+        height: 60px;
+        nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                li{
+                    margin: 10px;
+                    a{
+                        width:100px;
+                        height: 55px;
+                        font-size: 1.2rem;
+                        .fa-regular, .fa-solid{
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+
+    .home{
+        margin-top: 20px;
+        font-size: 1.5rem;
+        .container-img{
+            height: 150px;
+        }
+        .container-redes{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            a{
+                height: 80px;
+                width: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    height: 7rem;
+                }
+            }
+        }
+    }
+
+    .flechita{
+        .flechita-pabajo{
+            width: 40px;
+            font-size: 30px;
+            border: 2px solid #3ae467;
+        }
+    }
+
+/* SOBRE MI */
+
+    .about{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        .conocimientos{
+            width: 50%;
+            p{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+
+/* PROYECTOS */
+
+    .gallery{
+        h2{
+            font-size: 2rem;
+        }
+        .gallery-list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .gallery-container{
+                width: 50%;
+            }
+            .gallery-items{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+        }
+    }
+
+/* CONTACTO */
+
+    .review{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        h2{
+            font-size: 2rem;
+        }
+        .form{
+            width: 60%;
+        }
+    }
+}
+/* PC */
+
+@media (min-width: 1024px){
+
+body{
+    display: grid;
+    grid-template-areas: 
+        "header main main main"
+        "header main main main"
+    ;
+}
+
+main{
+    grid-area: main;
+}
+
+ul li a.active{
+    background-color: #2c3639;
+    color: #ffffff;
+    border-radius: 0;
+    background-color: #2c3639;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    position: relative;
+}
+
+
+ul li a.active::before {
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: 2rem;
+    bottom: 100%;
+    right: 0;
+    background-color: transparent;
+    border-bottom-right-radius: .5rem;
+    box-shadow: 0 1rem 0 #2c3639;
+}
+
+ul li a.active::after {
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: 2rem;
+    top: 100%;
+    right: 0;
+    background-color: transparent;
+    border-top-right-radius: .7rem;
+    box-shadow: 0 -1rem 0 #2c3639;
+}
+
+header{
+    top:0;
+    left: 0;
+    min-height: 100vh;
+    position: fixed;
+    width: 13%;
+    background-color: #e2dcdc;
+    border-radius: 0;
+    ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        li{
+            width: 100%;
+            a{
+                display: grid;
+                width: 100%;
+                grid-template-columns: 1fr 2fr;
+                font-size: 13px;
+                font-weight: 600;
+                i{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+/* INICIO */
+
+main{
+    // margin-left: 20%;    
+    .home{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container-items{
+            font-size: 2rem;
+            img{
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* SOBRE MI*/
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-size: 4rem;
+    }
+}
+
+/* PROYECTOS */
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-size: 4rem;
+    }
+}
+
+/* CONTACTO */
+
+.review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-size: 4rem;
+    }
+    .review-container{
+        p{
+            font-size: 2rem;
+            a{
+                font-size: 2rem;
+                font-weight: 500;
+            }
+        }
+    }
+    .review-herramientas{
+        font-size: 3rem;
+        .review-herramientas-img{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .boton-inicio{
+        width: 300px;
+        font-size: 1.5rem;
+        background-color: #3ae467;
+    }
+}
+
+};
+

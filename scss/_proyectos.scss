@@ -1,0 +1,80 @@
+/* PROYECTOS */
+
+.gallery{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gallery h2{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.gallery-list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.gallery-container{
+    height: 140px;
+    border: 1px solid #3ae467;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.gallery-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gallery-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-tecnologias{
+    display: grid;
+    justify-content: center;
+    color: #fff;
+}
+
+.gallery-tecnologias h3{
+    font-size: 15px;
+}
+
+.gallery-tec-logo span{
+    display: flex;
+    background-color: #fff;
+    color: #2c3639;
+    font-weight: 600;
+    border-radius: 5px;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.gallery-tecnologias img{
+    height: 20px;
+}
+.gallery-logo{
+    height: 100px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+}
+
+.gallery-drops{
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+}
+
+.bw , .sp{
+    background-color: #fff;
+}
